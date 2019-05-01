@@ -6,17 +6,77 @@
   background: #000;
   color: #f1f1f1;
 }
+        body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
     </style>
     <head>
 </head><body>
-<div class="header">
-<h1>Sonic Avionics</h1>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+    <div class="header">
+    <div align="left" style="color:white">
+     <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+    </div>
+        
+    <h1>Sonic Avionics</h1>
 </div>
 <p>
 &emsp;
 </p>
-<span style="vertical-align: bottom; width: 320px; height: 444px;"><iframe name="fd7e70218a1598" width="320px" height="444px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=288877201128871&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fd_vbiawPdxB.js%3Fversion%3D44%23cb%3Dfda1b98d0c11d8%26domain%3Dgalacticfunk.com%26origin%3Dhttp%253A%252F%252Fgalacticfunk.com%252Ff5592232c28f5c%26relation%3Dparent.parent&amp;container_width=330&amp;header=false&amp;height=444&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsonicavionics&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=false&amp;stream=true&amp;width=320" style="border: none; visibility: visible; width: 320px; height: 444px;" class=""></iframe></span>
-
-    
-    
-</body></html>
+<span style="vertical-align: bottom; width: 320px; height: 444px;"><iframe name="fd7e70218a1598" width="320px" height="444px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:like_box Facebook Social Plugin" src="https://www.facebook.com/plugins/like_box.php?app_id=288877201128871&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2Fd_vbiawPdxB.js%3Fversion%3D44%23cb%3Dfda1b98d0c11d8%26domain%3Dgalacticfunk.com%26origin%3Dhttp%253A%252F%252Fgalacticfunk.com%252Ff5592232c28f5c%26relation%3Dparent.parent&amp;container_width=330&amp;header=false&amp;height=444&amp;href=https%3A%2F%2Fwww.facebook.com%2Fsonicavionics&amp;locale=en_US&amp;sdk=joey&amp;show_border=false&amp;show_faces=false&amp;stream=true&amp;width=320" style="border: none; visibility: visible; width: 320px; height: 444px;" class=""></iframe></span>    
+</body>
+</html>
